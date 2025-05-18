@@ -1,3 +1,4 @@
+process.env.JWT_SECRET = 'test_secret'; 
 import { AuthService } from './auth.service';
 import { UsersService } from '../users/users.service';
 import { ConflictException, UnauthorizedException } from '@nestjs/common';
