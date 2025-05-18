@@ -22,6 +22,11 @@ describe('AuthService', () => {
     age: undefined
   };
 
+  beforeAll(() => {
+    process.env.JWT_SECRET = 'test_secret_key';
+  });
+  
+
   beforeEach(() => {
     usersService = {
       createUser: jest.fn(),
